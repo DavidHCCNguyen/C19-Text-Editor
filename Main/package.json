@@ -1,5 +1,5 @@
 {
-  "name": "mini-project-main",
+  "name": "main",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -15,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "codemirror": "^6.0.1",
     "express": "^4.17.1"
   },
   "devDependencies": {
