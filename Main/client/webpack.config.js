@@ -19,7 +19,6 @@ module.exports = () => {
       template: './index.html',
       title: 'Code Diary Text Editor'
     }),
-  // TODO: Add and configure workbox plugins for a service worker and manifest file.
   //service worker
     new InjectManifest({
       swSrc: './src-sw.js',
@@ -29,7 +28,7 @@ module.exports = () => {
     new WebpackPwaManifest({
       fingerprints: false,
       inject: true,
-      name: 'Dreamcatcher Text Editor',
+      name: 'Code Diary Text Editor',
       short_name: 'D.T.E',
       description: 'Keep track of important tasks!',
       background_color: '#0F111A',
@@ -47,7 +46,6 @@ module.exports = () => {
     ],
 
     module: {
-      // TODO: Add CSS loaders and babel to webpack.
       //add css loader
       rules: [
         {

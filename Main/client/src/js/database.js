@@ -13,11 +13,11 @@ const initdb = async () => {
             keyPath: "id",
             autoIncrement: true,
           });
-          console.log("text database created");
+          console.log("Database created");
         }
       },
     });
-    console.log("text database already exists");
+    console.log("Database already exists");
     return db;
   } catch (error) {
     console.error("Error initializing database:", error);
@@ -32,7 +32,7 @@ const putDb = async (content) => {
     const store = tx.objectStore(objectStoreName);
     await store.put({ text: content });
     await tx.done;
-    console.log("🚀 - data saved to the database");
+    console.log("🚀 - Data saved to the database");
   } catch (error) {
     console.error("Error saving data to the database:", error);
   }
@@ -45,7 +45,7 @@ const getDb = async () => {
     const tx = textDb.transaction(objectStoreName, "readonly");
     const store = tx.objectStore(objectStoreName);
     const result = await store.getAll();
-    console.log("result:", result);
+    console.log("Result:", result);
     return result;
   } catch (error) {
     console.error("Error fetching data from the database:", error);

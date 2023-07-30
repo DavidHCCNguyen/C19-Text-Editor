@@ -17,6 +17,7 @@ ____  ____  ____  _____   ____  _  ____  ____ ___  _
                                                      
 This is the
 Code Diary Text Editor
+
 /*
 `;
 
