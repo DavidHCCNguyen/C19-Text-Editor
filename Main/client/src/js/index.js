@@ -2,7 +2,7 @@ import { Workbox } from 'workbox-window';
 import Editor from './editor';
 import './database';
 import '../css/styles.css';
-import { header } from './header'; // Import the header content
+import '../css/style.css';
 
 // Show loading spinner while the editor is initializing
 const main = document.querySelector('#main');
@@ -17,23 +17,11 @@ const loadSpinner = () => {
   main.appendChild(spinner);
 };
 
-// Show the header
-const showHeader = () => {
-  const headerContainer = document.createElement('div');
-  headerContainer.classList.add('header');
-  headerContainer.innerHTML = header;
-  main.appendChild(headerContainer);
-};
+// Show the loading spinner
+loadSpinner();
 
 // Initialize the editor
-const initEditor = () => {
-  loadSpinner();
-  const editor = new Editor();
-  editor.editor.on("blur", () => {
-    console.log("The editor has lost focus");
-    putDb(localStorage.getItem("content"));
-  });
-};
+const editor = new Editor();
 
 // Check if service workers are supported
 if ('serviceWorker' in navigator) {
@@ -43,7 +31,3 @@ if ('serviceWorker' in navigator) {
 } else {
   console.error('Service workers are not supported in this browser.');
 }
-
-// Show the header and initialize the editor after a slight delay to allow loading spinner to show
-showHeader();
-setTimeout(initEditor, 100);

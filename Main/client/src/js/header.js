@@ -4,7 +4,8 @@
 
 // This will be the header of the page,
 // with in it will show the words "Code Diary" in ASCII art form
-const header = `
+const header =
+`
 /*
 
 Welcome to:
@@ -18,7 +19,7 @@ ____  ____  ____  _____   ____  _  ____  ____ ___  _
 This is the
 Code Diary Text Editor
 
-/*
+*/
 `;
 
 export { header };
