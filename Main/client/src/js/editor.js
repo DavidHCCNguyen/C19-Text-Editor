@@ -8,7 +8,7 @@ export default class Editor {
     }
 
     this.editor = CodeMirror(document.querySelector("#main"), {
-      value: "",
+      value: header, // Set the initial value to the header content
       mode: "javascript",
       theme: "material-ocean",
       lineNumbers: true,

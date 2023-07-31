@@ -2,7 +2,8 @@ import { Workbox } from 'workbox-window';
 import Editor from './editor';
 import './database';
 import '../css/styles.css';
-import '../css/style.css';
+import './app'; // Add this line to import app.js
+
 
 // Show loading spinner while the editor is initializing
 const main = document.querySelector('#main');
