@@ -1,14 +1,10 @@
-# 19 Progressive Web Applications (PWA): Text Editor
+# 19 Text Editor
 
-Task
+## Task
 
-Your task is to build a text editor that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
+the task is to build a text editor that runs in the browser. The app will be a single-page application that meets the PWA criteria. Additionally, it will feature a number of data persistence techniques that serve as redundancy in case one of the options is not supported by the browser. The application will also function offline.
 
-To build this text editor, you will start with an existing application and implement methods for getting and storing data to an IndexedDB database. You will use a package called `idb`, which is a lightweight wrapper around the IndexedDB API. It features a number of methods that are useful for storing and retrieving data, and is used by companies like Google and Mozilla.
-
-You will deploy this full-stack application to Heroku using the [Heroku Deployment Guide on The Full-Stack Blog](https://coding-boot-camp.github.io/full-stack/heroku/heroku-deployment-guide).
-
-## User Story
+## Story
 
 ```md
 AS A developer
@@ -45,3 +41,29 @@ THEN I should have my static assets pre cached upon loading along with subsequen
 WHEN I deploy to Heroku
 THEN I should have proper build scripts for a webpack application
 ```
+
+## Photos
+
+![Working App.](./Assets/1Capture.png)
+
+Working App
+
+![Working App that shows download option.](./Assets/2Capture.png)
+
+Working App that shows download option
+
+![Downloaded the app, it is now on computer.](./Assets/3Capture.png)
+
+Downloaded the app, it is now on computer
+
+![The Manifest file is on.](./Assets/4Capture.png)
+
+The Manifest file is on
+
+![The Service Worker is on.](./Assets/5Capture.png)
+
+The Service Worker is on
+
+![The IndexedDB is on.](./Assets/6Capture.png)
+
+The IndexedDB is on
