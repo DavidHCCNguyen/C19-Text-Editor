@@ -44,7 +44,7 @@ THEN I should have proper build scripts for a webpack application
 
 ## Photos
 
-[Working App.](./Assets/1Capture.png)
+![Working App.](./Assets/1Capture.png)
 
 Working App
 
